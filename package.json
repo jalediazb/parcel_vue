@@ -1,0 +1,35 @@
+{
+  "name": "parcel_vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./public/index.html --out-dir docs",
+    "build": "parcel build ./public/index.html --out-dir docs --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalediazb/parcel_vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalediazb/parcel_vue/issues"
+  },
+  "homepage": "https://github.com/jalediazb/parcel_vue#readme",
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-purgecss": "^3.0.0",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
