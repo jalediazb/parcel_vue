@@ -1,7 +1,7 @@
 //purgecss.config.js
 
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.vue", "./src/*.vue"],
+  content: ["./public/*.html", "./src/**/*.vue", "./src/*.vue"],
   defaultExtractor(content) {
     const contentWithoutStyleBlocks = content.replace(
       /<style[^]+?<\/style>/gi,

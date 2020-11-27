@@ -1,7 +1,6 @@
 # Pediente
 
 - Error Scoped Sytiles
-- Eliminar los ficheros anteriormente generados en la carpeta ./docs
 
 
 
@@ -141,13 +140,13 @@ import '../node_modules/bulma/css/bulma.css';
 
 ## purgecss
 
-`npm install -D parcel-plugin-purgecss`
+`npm install -D purgecss parcel-plugin-purgecss`
 
 ```javascript
 //purgecss.config.js
 
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.vue", "./src/*.vue"],
+  content: ["./public/*.html", "./src/**/*.vue", "./src/*.vue"],
   defaultExtractor(content) {
     const contentWithoutStyleBlocks = content.replace(
       /<style[^]+?<\/style>/gi,
@@ -164,6 +163,16 @@ module.exports = {
     /data-v-.*/,
   ],
 };
+```
+
+## Limpiar directorio "docs" al construir
+
+`npm install -D rimraf`
+
+Añadir script a `packeage.json`
+
+```
+"prebuild": "rimraf dist",
 ```
 
 
